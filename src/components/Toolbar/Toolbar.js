@@ -1,22 +1,35 @@
-import React from 'react';
-import './Toolbar.css'
+import React, {useState} from 'react';
+import './Toolbar.css';
 
 
-const tbar = props => (
+function Toolbar(props) {
+    const[hamburgerMenu, setHamMenu]= useState(false);
+    function getHamClasses() {
+        var hm = "hamOff"
+        if(hamburgerMenu){
+            hm="hamOn"
+        }
+        return [hm, "toolbar-links"].join(' ');
+    }
+    return (
         <nav className="toolbar">
-            <div className ="my-name">Shmuel Berman</div>
-            <a href="#" className="hamburger">
+            <div className ="my-name">shmuel berman  {hamburgerMenu}</div>
+            <a href="#" onClick ={()=>{setHamMenu(!hamburgerMenu);
+            console.log(hamburgerMenu);    
+            }}className="hamburger">
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
                     </a>
-            <div className="toolbar-links">
+            <div className={getHamClasses()}>
                 <ul>
-                    <li ><a href="#">CV</a></li>
-                    <li><a href="#">Publications</a></li>
+                    <li ><a href="#">home</a></li>
+                    <li ><a href="#">cv</a></li>
+                    <li><a href="#">github</a></li>
                 </ul>
             </div>
         </nav>
-);
+)
+}
 
-export default tbar;
+export default Toolbar;
