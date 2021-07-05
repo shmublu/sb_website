@@ -9,7 +9,7 @@ function Toolbar(props) {
         if(hamburgerMenu){
             hm="hamOn"
         }
-        return [hm, "toolbar-links"].join(' ');
+        return hm;
     }
     return (
         <nav className="toolbar">
@@ -21,7 +21,7 @@ function Toolbar(props) {
                     <span className="bar"></span>
                     <span className="bar"></span>
                     </a>
-            <div className={getHamClasses()}>
+            <div className={[getHamClasses(), "toolbar-links"].join(' ')}>
                 <ul>
                     <li ><a href="#">home</a></li>
                     <li ><a href="#">cv</a></li>
