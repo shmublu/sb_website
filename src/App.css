@@ -6,14 +6,3 @@ body {
     margin: 0;
     padding: 0;
 }
-.intro-desc {
-    position:absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Source Code Pro', monospace;
-    color:black;
-    width:100%;
-    top:5rem;
-    height:20vh;
-}

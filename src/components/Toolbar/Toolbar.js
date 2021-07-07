@@ -13,7 +13,7 @@ function Toolbar(props) {
     }
     return (
         <nav className="toolbar">
-            <div className ="my-name">shmuel berman  {hamburgerMenu}</div>
+            <div className ="my-name">shmuel berman</div>
             <a href="#" onClick ={()=>{setHamMenu(!hamburgerMenu);
             console.log(hamburgerMenu);    
             }}className="hamburger">

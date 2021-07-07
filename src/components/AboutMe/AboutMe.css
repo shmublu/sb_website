@@ -1,0 +1,38 @@
+.AboutMe {
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Source Code Pro', monospace;
+        color:black;
+        width:100%;
+        z-index: -1;
+        top:5rem;
+        flex-direction: row;
+        flex-wrap:wrap;
+}
+
+.AboutMe p {
+    display:inline-flex;
+    font-family: 'Helvetica', monospace;
+    max-width: 40rem;
+    font-size: 1rem;
+    margin-left: 0rem;
+}
+.personalPicture {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:.2rem;
+}
+.personalPicture img{
+    display:flex;
+    width:10rem;
+    height:13.3333rem;
+}
+.Typewriter {
+    display:flex;
+    text-align: center;
+    padding-left:0.3rem;
+}
