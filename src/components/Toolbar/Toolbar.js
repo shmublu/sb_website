@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Toolbar.css';
+import { Link } from "react-router-dom";
 
 
 function Toolbar(props) {
@@ -13,7 +14,8 @@ function Toolbar(props) {
     }
     return (
         <nav className="toolbar">
-            <div className ="my-name">shmuel berman</div>
+
+            <div className ="my-name">SHMUEL BERMAN</div>
             <a href="#" onClick ={()=>{setHamMenu(!hamburgerMenu);
             console.log(hamburgerMenu);    
             }}className="hamburger">
@@ -23,9 +25,9 @@ function Toolbar(props) {
                     </a>
             <div className={[getHamClasses(), "toolbar-links"].join(' ')}>
                 <ul>
-                    <li ><a href="#">home</a></li>
-                    <li ><a href="#">cv</a></li>
-                    <li><a href="#">github</a></li>
+                    <li ><Link to="/">home </Link></li>
+                    <li ><Link to="/resume">cv</Link></li>
+                    <li><a href="https://github.com/shmublu/">github</a></li>
                 </ul>
             </div>
         </nav>

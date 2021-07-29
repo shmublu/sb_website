@@ -1,15 +1,13 @@
 import Toolbar from './components/Toolbar/Toolbar.js'
-import Typewriter from 'typewriter-effect';
-import AboutMe from './components/AboutMe/AboutMe.js'
+import Main from './components/Main.js'
 import './App.css'
 
 function App() {
   return (
     <>
-    
     <div className="App">
       <Toolbar/>
-      <AboutMe/>  
+      <Main/>
     </div>
     </>
 
