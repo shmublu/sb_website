@@ -1,0 +1,49 @@
+.AboutMe {
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Source Code Pro', monospace;
+        color:black;
+        width:100%;
+        z-index: -1;
+        top:5rem;
+        flex-direction: row;
+        flex-wrap:wrap;
+}
+
+.AboutMe p {
+    display:inline-flex;
+    font-family: 'Helvetica', monospace;
+    max-width: 40rem;
+    font-size: 1rem;
+    margin-left: 0rem;
+}
+.personalPicture {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:.2rem;
+}
+.top {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {/* Green */
+    border: 1rem;
+    border-radius: 1rem;
+    color: black;
+    padding: 1rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
